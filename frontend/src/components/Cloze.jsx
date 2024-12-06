@@ -35,7 +35,7 @@ const DynamicUnderlineCopy = () => {
 
   return (
     <div style={{ fontFamily: "Arial, sans-serif", padding: "20px" }}>
-      <h2>Dynamic Underline and Copy</h2>
+      
       <div style={{ marginBottom: "20px" }}>
         <label>
           Enter Sentence:

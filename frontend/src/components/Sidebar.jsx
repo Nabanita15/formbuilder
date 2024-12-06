@@ -22,28 +22,28 @@ const Sidebar = ({ onAddQuestion }) => {
   }, []);
 
   return (
-    <div className="w-1/4 bg-gray-200 p-4 h-screen fixed">
+    <div className="w-1/4 border-l-2 shadow-xl p-4 h-screen fixed">
       <h2 className="text-xl font-bold mb-4">Question Types</h2>
       {data.length > 0 ? (
         data.map((item, index) => (
           <div>
             <button
               key={index} // Use a unique identifier if available
-              className="block w-full bg-blue-500 text-white p-2 rounded mb-2"
+              className="block w-full bg-blue-500 text-white p-2 rounded mb-2 hover:scale-105 transition-all"
               onClick={() => onAddQuestion(item.Categories || "Unknown Type")}
             >
               Add {item.Categories || "Unknown Type"}
             </button>
             <button
               key={index} // Use a unique identifier if available
-              className="block w-full bg-blue-500 text-white p-2 rounded mb-2"
+              className="block w-full bg-blue-500 text-white p-2 rounded mb-2  hover:scale-105 transition-all"
               onClick={() => onAddQuestion(item.addCloze || "Unknown Type")}
             >
               Add {item.addCloze || "Unknown Type"}
             </button>
             <button
               key={index} // Use a unique identifier if available
-              className="block w-full bg-blue-500 text-white p-2 rounded mb-2"
+              className="block w-full bg-blue-500 text-white p-2 rounded mb-2  hover:scale-105 transition-all"
               onClick={() =>
                 onAddQuestion(item.Comprehanension || "Unknown Type")
               }
